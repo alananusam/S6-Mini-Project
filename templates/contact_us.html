@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--to make website responsive-->
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/styles/maincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!--palce for logo-->
+            <div class="nav-opt"><!--navigation options-->
+                
+                    <a href="{{ url_for('home') }}">HOME</a>
+                    <a href="{{ url_for('about_us') }}">ABOUT</a>
+                    <a href="{{ url_for('contact_us') }}">CONTACT</a>
+                
+            </div>
+        </nav>
+
+        <div class="box-1">
+          <form action="https://api.web3forms.com/submit" method="POST" class="box-left">
+            <div class="left-title">
+              <h2>Get in touch</h2>
+              <hr>
+            </div>
+            <input type="hidden" name="access_key" value="d5b03d29-6cf5-4dad-b7e1-0a0336217699">
+            <input type="text" name="name" placeholder="Full Name" class="contact-inp" required>
+            <input type="email" name="email" placeholder="Email" class="contact-inp" required>
+            <textarea name="message" placeholder="Enter Message" class="contact-inp" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div class="box-right">
+            <img class="contact-img" src="/static/images/contactus.png">
+          </div>
+        </div>
+
+
+    </section>
+    
+    
+
+</body>
+</html>

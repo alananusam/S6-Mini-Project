@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--to make website responsive-->
+    <title>About Us</title>
+    <link rel="stylesheet" href="/static/styles/maincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!--palce for logo-->
+            <div class="nav-opt"><!--navigation options-->
+                
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('about_us') }}">ABOUT</a>
+                <a href="{{ url_for('contact_us') }}">CONTACT</a>
+                
+            </div>
+        </nav>
+
+        
+        <div class="about">
+            <div class="box2-left">
+                <img class="about-img" src="/static/images/aboutsus.png">
+            
+                <div class="about-title">
+                    <h2>ABOUT US</h2>
+                    <hr>
+                
+                <p>Welcome to SerenadeBot, where we blend advanced technology with the power of music to enhance your well-being. At the heart of our initiative lies a chatbot-driven music recommendation system, designed to cater to your unique emotional needs.
+                    In a world where music plays a vital role in regulating moods and alleviating stress, our innovative approach integrates advanced technology with the therapeutic potential of music.
+                    Unlike traditional music recommendation systems, which often overlook the user's emotional state, our application fills this gap by delivering personalized music recommendations tailored to your real-time mood. Through this dynamic interaction, we aim to elevate your music discovery experience while enhancing your overall well-being.
+                    
+                    Join us on this journey where technology meets emotion, and let the power of music guide you towards a more harmonious state of being.</p>
+                </div>
+            
+            
+          </div>
+        </div>
+
+        
+    </section>
+    
+
+</body>
+</html>
